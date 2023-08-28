@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+  }
+  
+  .addTaskSection {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  #newTask {
+    padding: 8px;
+    width: 70%;
+    margin-right: 10px;
+  }
+  
+  #addTaskButton {
+    padding: 8px 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .completeButton, .modifyButton, .updateButton, .deleteButton {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+  }
+  
+  .completeButton.disabled, .modifyButton.disabled, .updateButton.disabled, .deleteButton.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .updateInput {
+    width: 70%;
+    padding: 6px;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
